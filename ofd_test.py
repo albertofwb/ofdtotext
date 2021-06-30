@@ -11,10 +11,10 @@ def test():
         print('read file', path)
         file_path = os.path.join(folder, path)
         doc = OFDFile(file_path)
-        doc.get_text()
+        print(doc.get_text())
 
 
 if __name__ == '__main__':
     file_path = sys.argv[1]
     doc = OFDFile(file_path)
-    doc.get_text()
+    print(doc.get_text())

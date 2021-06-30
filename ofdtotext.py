@@ -22,9 +22,7 @@ class OFDFile(object):
         return Node(root)
 
     def get_text(self):
-        for i in self.document.pages:
-            for j in i.content.layer.text_code:
-                print(j.text)
+        return '\n'.join([code.text for page in self.document.pages for code in page.content.layer.text_code])
 
 
 class OFDDocument(object):
