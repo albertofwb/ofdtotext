@@ -1,4 +1,3 @@
-import io
 from zipfile import PyZipFile
 import cssselect2
 from defusedxml import ElementTree
