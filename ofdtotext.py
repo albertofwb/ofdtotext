@@ -5,7 +5,7 @@ from defusedxml import ElementTree
 
 class OFDFile(object):
     header = None
-    zf:PyZipFile
+    zf: PyZipFile
 
     def __init__(self, fobj):
         self.zf = fobj if isinstance(fobj, PyZipFile) else PyZipFile(fobj)
@@ -64,7 +64,7 @@ class Content:
 
 
 class OFDPage(object):
-    def __init__(self, parent: OFDDocument, name, page_node):
+    def __init__(self, parent: OFDDocument, _, page_node):
         self.parent = parent
         self.content = Content(page_node['Content'])
 
