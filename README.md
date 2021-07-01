@@ -19,8 +19,7 @@ from ofdtotext import OFDFile
 doc = OFDFile('test.ofd')
 print(doc.get_text())
 ```
-# Need Help?
-有任何问题请提Issue或者联系 **albertofwb@gmail.com**。
+
 
 # ref
 核心代码参考自 [ofd2img](https://github.com/geniusnut/ofd2img)
